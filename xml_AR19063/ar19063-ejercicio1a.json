@@ -1,0 +1,21 @@
+{
+    "fichero": {
+      "ficha": [
+        {
+          "id": "1",
+          "nombre": "Antonio",
+          "apellido": "Barbero",
+          "direccion": "Calle de Los Andes, 45"
+        },
+        {
+          "id": "2",  
+          "nombre": "Javier",
+          "apellido": "Alfaro",
+          "direccion": "San Salvador, San Salvador",
+          "telefono": "+503 75611717",
+          "email": "ar19063@ues.edu.sv",
+          "github": "https://github.com/InfinityJaaR"
+        }
+      ]
+    }
+  }

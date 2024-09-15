@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web con Navegación Moderna</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-title">AR19063</div>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="#preguntas">Preguntas y Respuestas</a>
+            <a href="#ejemplos">Ejemplos y Ejercicios</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <section id="inicio" class="section">
+            <h1>Bienvenido a la Guía de laboratorio 31 de TPI</h1>
+            <h3>Universidad:</h3>
+            <p>Universidad de el Salvador (UES)</p>
+            <h3>Carrera:</h3>
+            <p>Ingeniería de Sistemas Informáticos</p>
+            <h3>Nombre:</h3>
+            <p>Javier Alexander Alfaro Romero</p>
+            <h3>Carnet:</h3>
+            <p>AR19063</p>
+            <h3>Materia:</h3>
+            <p>Técnicas de Programación para el Internet (TPI115)</p>
+        </section>
+
+        <section id="preguntas" class="section">
+            <h1>Preguntas y Respuestas</h1>
+            <h3>¿A partir del ejemplo 1 y ejercicios desarrollados hasta el momento que puede concluir?</h3>
+                <p>En lo trabajo hasta el momento puedo decir que he comprendido de mayor manera que es un elemento y de como puedo formar nuevas y personalizadas estructuras XML</p>
+                <h3>¿A partir del ejemplo 2 y ejercicios desarrollados hasta el momento que puede concluir?</h3>
+                <p>En el momento de desarrollar hay que tener una idea desarrollada de como estructurar los atributos, ya que estas deben de tener un logica</p>
+                <h3>¿A partir de los ejercicios desarrollados en esta sección II.3 que puede concluir?</h3>
+                <p>Puedo decir que es una manera diferente de trabajar los objetos, como un iquivalente de los JSON</p>
+                <h3>¿A partir de ejemplo/ejercicios CSS desarrollados, que puede concluir?</h3>
+                <p>En el momento de realizar o crear un diseño es la misma a la de siempre o estoy acostumbrado</p>
+        </section>
+
+        <section id="ejemplos" class="section">
+            <h1>Ejemplos y Ejercicios</h1>
+            <div class="directory">
+                <ul>
+                    <li>Ejemplos
+                        <ul>
+                            <li><a href="./xml_AR19063/ar19063-ejemplo1.xml">ejemplo1.xml</a></li>
+                            <li><a href="./xml_AR19063/ar19063-ejemplo2.xml">ejemplo2.xml</a></li>
+                        </ul>
+                    </li>
+                    <li>Ejercicios
+                        <ul>
+                            <li><a href="./xml_AR19063/ar19063-ejercicio1a.xml">ejercicio1a.xml</a></li>
+                            <li><a href="./xml_AR19063/ar19063-ejercicio1b.xml">ejercicio1b.xml</a></li>
+                            <li><a href="./xml_AR19063/ar19063-ejercicio2a.xml">ejercicio2a.xml</a></li>
+                            <li><a href="./xml_AR19063/ar19063-ejercicio2b.xml">ejercicio2b.xml</a></li>
+                        </ul>
+                    </li>
+                    <li>Json
+                        <ul>
+                            <li><a href="./xml_AR19063/ar19063-ejercicio1a.json">ejercicio1a.json</a></li>
+                            <li><a href="./xml_AR19063/ar19063-ejercicio1b.json">ejercicio1b.json</a></li>
+                            <li><a href="./xml_AR19063/ar19063-ejercicio2a.json">ejercicio2a.json</a></li>
+                            <li><a href="./xml_AR19063/ar19063-ejercicio2b.json">ejercicio2b.json</a></li>
+                            <li><a href="./xml_AR19063/ar19063-ejemplo1.json">ejemplo1.json</a></li>
+                            <li><a href="./xml_AR19063/ar19063-ejemplo2.json">ejemplo2.json</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <a href="index.html" class="home-btn">
+        <i class="fas fa-home"></i>
+    </a>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

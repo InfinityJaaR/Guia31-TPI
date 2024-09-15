@@ -1,0 +1,77 @@
+/* ar19063-ejercicio1a.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+fichero {
+    display: block;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+ficha {
+    display: block;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+nombre, apellido, direccion, telefono, email, github {
+    display: block;
+    margin-bottom: 5px;
+}
+
+nombre::before {
+    content: "Nombre: ";
+    font-weight: bold;
+}
+
+apellido::before {
+    content: "Apellido: ";
+    font-weight: bold;
+}
+
+direccion::before {
+    content: "Dirección: ";
+    font-weight: bold;
+}
+
+telefono::before {
+    content: "Teléfono: ";
+    font-weight: bold;
+}
+
+email::before {
+    content: "Email: ";
+    font-weight: bold;
+}
+
+github::before {
+    content: "GitHub: ";
+    font-weight: bold;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #0056b3;
+}

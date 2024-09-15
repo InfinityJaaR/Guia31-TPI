@@ -1,0 +1,103 @@
+/* ar19063-ejemplo2.css */
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f0f0;
+    background-image: linear-gradient(45deg, #f0f0f0 25%, transparent 25%), 
+                      linear-gradient(-45deg, #f0f0f0 25%, transparent 25%), 
+                      linear-gradient(45deg, transparent 75%, #f0f0f0 75%), 
+                      linear-gradient(-45deg, transparent 75%, #f0f0f0 75%);
+    background-size: 20px 20px;
+    margin: 0;
+    padding: 20px;
+}
+
+pais {
+    display: block;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 2px solid #0047AB;
+}
+
+pais::before {
+    content: attr(nombre);
+    display: block;
+    font-size: 2.5em;
+    color: #0047AB;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+departamento {
+    display: block;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border-left: 5px solid #E81D31; /* A red color inspired by the El Salvador flag */
+}
+
+departamento::before {
+    content: "Departamento: " attr(nombre);
+    display: block;
+    font-size: 1.5em;
+    color: #E81D31;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+cabecera, habitantes, altura {
+    display: block;
+    margin: 10px 0;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+cabecera::before {
+    content: "Cabecera: ";
+    font-weight: bold;
+    color: #0047AB;
+}
+
+habitantes::before {
+    content: "Habitantes: ";
+    font-weight: bold;
+    color: #0047AB;
+}
+
+altura::before {
+    content: "Altura: ";
+    font-weight: bold;
+    color: #0047AB;
+}
+
+a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #0047AB;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+a:hover {
+    background-color: #E81D31;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
